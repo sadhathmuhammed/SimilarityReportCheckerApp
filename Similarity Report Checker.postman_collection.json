@@ -1,0 +1,965 @@
+{
+	"info": {
+		"_postman_id": "08dcfeae-ab29-447a-be66-03cb4c5b7f70",
+		"name": "Similarity Report Checker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46658422"
+	},
+	"item": [
+		{
+			"name": "Faculty Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\",\n  \"name\": \"Prof. Zaadhy\",\n  \"email\": \"sadhath2k01@gmail.com\",\n  \"department\": \"EEE\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/register/faculty/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register",
+						"faculty",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Faculty Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\",\n  \"name\": \"Prof. Zaadhy\",\n  \"email\": \"sadhath2k01@gmail.com\",\n  \"department\": \"EEE\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/register/faculty/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								"faculty",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 08:24:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Prof. Zaadhy\",\n    \"email\": \"sadhath2k01@gmail.com\",\n    \"department\": \"EEE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Student Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"Don\",\n  \"password\": \"passdon\",\n  \"name\": \"Don\",\n  \"email\": \"don@example.com\",\n  \"faculty\": 5\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/register/student/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register",
+						"student",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Student Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Don\",\n  \"password\": \"passdon\",\n  \"name\": \"Don\",\n  \"email\": \"don@example.com\",\n  \"faculty\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/register/student/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								"student",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 09:18:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Don\",\n    \"email\": \"don@example.com\",\n    \"faculty\": 5\n}"
+				}
+			]
+		},
+		{
+			"name": "Login page-faculty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login page-faculty",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 08:34:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "520"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MjMwOTI2MCwiaWF0IjoxNzUyMjIyODYwLCJqdGkiOiI1YzNmZGFjYTc5NTc0YjVhODA5NDk5MWI0MzZlZjYyMSIsInVzZXJfaWQiOjEyfQ.yKdCzRtEIZy2MzjLHLZtStM5XVK1YZ_QOdl7yeadtSc\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjIzMTYwLCJpYXQiOjE3NTIyMjI4NjAsImp0aSI6IjUyZWY4YTJlNTUxODQ1NjY5ZDdiYjJlZWU3NzBkN2ExIiwidXNlcl9pZCI6MTJ9.rM6JHzzrKCwkfStXxMTePz9gl7nCXh1WKBoegqrVufQ\",\n    \"username\": \"user\",\n    \"is_staff\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "login-student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjIzNDc1LCJpYXQiOjE3NTIyMjMxNzUsImp0aSI6IjM3OWY2YTlmYTE4NTRkOTdhNWNmYTVlOGRmMWZlNDlmIiwidXNlcl9pZCI6MTN9.CtVkOMFvu0vqUQWdMPXpdjsiImC8PXid8f_5_XjQH3Ion\",\n  \"password\": \"passdon\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login-student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Don\",\n  \"password\": \"passdon\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 09:19:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "520"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MjMxMTk1MCwiaWF0IjoxNzUyMjI1NTUwLCJqdGkiOiI3YzcyMTI2NzVlM2Y0NzBiOTk0M2I4ZmExZmFlNjM1NCIsInVzZXJfaWQiOjE1fQ.-c_Dp524KFsj9oYIyBX1MNUn5V7cbYiAEsQIHZf7Mh8\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1ODUwLCJpYXQiOjE3NTIyMjU1NTAsImp0aSI6IjEwMTBhZWE2YTk4YzQ3ZjQ4NzFlYWY4MDgxN2M3ZWVhIiwidXNlcl9pZCI6MTV9.mO-U6tinjob3l4q7XIBNaM0IMzrF8EFwF3gL6SYZfZ4\",\n    \"username\": \"Don\",\n    \"is_staff\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Submission Api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1ODUwLCJpYXQiOjE3NTIyMjU1NTAsImp0aSI6IjEwMTBhZWE2YTk4YzQ3ZjQ4NzFlYWY4MDgxN2M3ZWVhIiwidXNlcl9pZCI6MTV9.mO-U6tinjob3l4q7XIBNaM0IMzrF8EFwF3gL6SYZfZ4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "docx_file",
+							"type": "file",
+							"src": "postman-cloud:///1f05da2e-faec-49a0-b85e-29465132d98a"
+						},
+						{
+							"key": "ppt_file",
+							"type": "file",
+							"src": "postman-cloud:///1f05da31-8559-4640-9c15-1e4d596c986a"
+						},
+						{
+							"key": "similarity_report",
+							"type": "file",
+							"src": "postman-cloud:///1f05da32-15de-4760-9159-f8aa780c353f"
+						},
+						{
+							"key": "title",
+							"value": "\"Second Submission\"\t",
+							"type": "text"
+						},
+						{
+							"key": "description\t",
+							"value": "\t",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/upload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"upload",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Submission Api",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1ODUwLCJpYXQiOjE3NTIyMjU1NTAsImp0aSI6IjEwMTBhZWE2YTk4YzQ3ZjQ4NzFlYWY4MDgxN2M3ZWVhIiwidXNlcl9pZCI6MTV9.mO-U6tinjob3l4q7XIBNaM0IMzrF8EFwF3gL6SYZfZ4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "docx_file",
+									"type": "file",
+									"src": "postman-cloud:///1f05da2e-faec-49a0-b85e-29465132d98a"
+								},
+								{
+									"key": "ppt_file",
+									"type": "file",
+									"src": "postman-cloud:///1f05da31-8559-4640-9c15-1e4d596c986a"
+								},
+								{
+									"key": "similarity_report",
+									"type": "file",
+									"src": "postman-cloud:///1f05da32-15de-4760-9159-f8aa780c353f"
+								},
+								{
+									"key": "title",
+									"value": "\"Second Submission\"\t",
+									"type": "text"
+								},
+								{
+									"key": "description\t",
+									"value": "\t",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/student/upload/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student",
+								"upload",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 09:19:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "94"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Submission uploaded successfully\",\n    \"similarity_percentage\": 3.79,\n    \"status\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "faculty dashboard",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1OTM0LCJpYXQiOjE3NTIyMjU2MzQsImp0aSI6ImQwZDgzMDU2NGUxNzQzODJhYjNmZmUyMzAwODk4NDQwIiwidXNlcl9pZCI6MTJ9.YD49bDGKR9eVIlPvlJ_b_wrgnVixQuU-yMyg6wVbTC4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/faculty/dashboard/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"faculty",
+						"dashboard",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "F-dashboard-no students",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1MjQyLCJpYXQiOjE3NTIyMjQ5NDIsImp0aSI6Ijc3Y2RlNWE0YmVhYTQxY2NhMGRiNGQ2Y2RlMDQwODE0IiwidXNlcl9pZCI6MTJ9.aMRE7v19hQv2dT44HlSQN2vI6xi7mE50EjgR-uuI6dk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/faculty/dashboard/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"faculty",
+								"dashboard",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 09:10:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "98"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"status_code\": 200,\n    \"message\": \"No students are currently assigned to you.\",\n    \"data\": []\n}"
+				},
+				{
+					"name": "No submission",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1NjE1LCJpYXQiOjE3NTIyMjUzMTUsImp0aSI6IjM2NWZiMDdjZjgxZDRkMTliNjk1MjNmYWFkNWM4Njc0IiwidXNlcl9pZCI6MTJ9.RBpExn-ybqI-Fb8eh8elvIPg7S2aLm-qo-xdT6NF8VQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/faculty/dashboard/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"faculty",
+								"dashboard",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 09:15:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "95"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"status_code\": 200,\n    \"message\": \"No submissions found for your students.\",\n    \"data\": []\n}"
+				},
+				{
+					"name": "Fetched submission",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjI1OTM0LCJpYXQiOjE3NTIyMjU2MzQsImp0aSI6ImQwZDgzMDU2NGUxNzQzODJhYjNmZmUyMzAwODk4NDQwIiwidXNlcl9pZCI6MTJ9.YD49bDGKR9eVIlPvlJ_b_wrgnVixQuU-yMyg6wVbTC4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\",\n  \"password\": \"passuser\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/faculty/dashboard/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"faculty",
+								"dashboard",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Jul 2025 09:20:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "530"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"status_code\": 200,\n    \"message\": \"Submissions fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"version\": 1,\n            \"docx_file\": \"http://127.0.0.1:8000/media/submissions/student_7/submission_2/v1/document.docx\",\n            \"ppt_file\": \"http://127.0.0.1:8000/media/submissions/student_7/submission_2/v1/samplepptx.pptx\",\n            \"similarity_report\": \"http://127.0.0.1:8000/media/submissions/student_7/submission_2/v1/report27272199.pdf\",\n            \"upload_timestamp\": \"2025-07-11T09:19:59.839467Z\",\n            \"status\": \"Success\",\n            \"remarks\": \"\",\n            \"similarity_percentage\": 3.79,\n            \"submission\": 2\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
