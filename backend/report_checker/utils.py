@@ -5,6 +5,9 @@ import re
 from rest_framework.views import exception_handler
 
 def custom_exception_handler(exc, context):
+    """
+    Custom exception handler to include status code in the response.
+    """
     response = exception_handler(exc, context)
     if response is not None:
         if response.status_code == 401:
@@ -26,6 +29,21 @@ def custom_exception_handler(exc, context):
     return response
 
 def extract_similarity_percentage(file_path):
+    """
+    Extracts the similarity percentage from a given document file.
+
+    This function reads the content of a file, either a PDF or DOCX, and searches
+    for a similarity percentage value stated in the format of "xx.xx% SIMILARITY".
+    It returns the extracted percentage as a float. If no such pattern is found,
+    it returns 0.0.
+
+    Args:
+        file_path (str): The path to the document file (.pdf or .docx).
+
+    Returns:
+        float: The extracted similarity percentage, or 0.0 if not found.
+    """
+
     text = ""
     if file_path.endswith('.pdf'):
         doc = fitz.open(file_path)
