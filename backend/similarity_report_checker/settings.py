@@ -157,7 +157,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sadhath2k01@gmail.com'
-EMAIL_HOST_PASSWORD = 'aytr jlkv nsyu lbgo'
+EMAIL_HOST_PASSWORD = 'fake'
 DEFAULT_FROM_EMAIL = 'Plagiarism System <similaritycheck@gmail.com>'
 
 
